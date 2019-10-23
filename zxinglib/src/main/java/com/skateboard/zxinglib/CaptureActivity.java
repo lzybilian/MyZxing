@@ -437,7 +437,7 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
     }
     protected void switchActivity(CharSequence isbn) {
         Intent data = new Intent();
-        data.putExtra("CaptureIsbn", isbn);
+        data.putExtra(KEY_DATA, isbn);
         setResult(RESULT_OK, data);
         finish();
     }
